@@ -1,7 +1,8 @@
 # linTutu blog (linblog)
+[![Build status](https://ci.appveyor.com/api/projects/status/183httd1t9t5vkkf?svg=true)](https://ci.appveyor.com/project/569746927/lintutu-frontend)
 
 lintutu blog
-[![Build status](https://ci.appveyor.com/api/projects/status/183httd1t9t5vkkf?svg=true)](https://ci.appveyor.com/project/569746927/lintutu-frontend)
+
 ## Install the dependencies
 ```bash
 yarn
