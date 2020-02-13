@@ -1,8 +1,8 @@
 init:
   - git config --global core.autocrlf true
-  - npm install -g corejs@latest
+  - npm install -g core-js@latest
   - npm install -g @quasar/cli
-  - quasar ext --add @quasar/testing-unit-jest
+  - quasar ext --add @quasar/testing-unit-jest --skip-pkg
 # Test against this version of Node.js
 environment:  
   matrix:
