@@ -5,21 +5,17 @@ environment:
   matrix:
     # node.js
     - nodejs_version: "8"
-    - nodejs_version: "7"
-    - nodejs_version: "6"
 platform:  
   - x64
-
 # Install scripts. (runs after repo cloning)
 install:  
   # Get the latest stable version of Node.js or io.js
   - ps: Install-Product node $env:nodejs_version
   # install modules
-  - npm install yarn -g
   - ps: Install-Product quasar....
-  - yarn global add @quasar/cli
+  - npm install -g @quasar/cli
   - ps: quasar version check ....
-  - yarn install
+  - npm install
 # Post-install test scripts.
 test_script:  
   # Output useful info for debugging
