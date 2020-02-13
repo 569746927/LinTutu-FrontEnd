@@ -1,5 +1,6 @@
 init:
   - git config --global core.autocrlf true
+  - npm install -g @quasar/cli
 # Test against this version of Node.js
 environment:  
   matrix:
