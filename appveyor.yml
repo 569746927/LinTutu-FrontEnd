@@ -1,5 +1,7 @@
 init:
   - git config --global core.autocrlf true
+  - npm install -g corejs@latest
+  - npm install -g @quasar/cli
   - quasar ext --add @quasar/testing-unit-jest
 # Test against this version of Node.js
 environment:  
@@ -13,7 +15,6 @@ install:
   # Get the latest stable version of Node.js or io.js
   - ps: Install-Product node $env:nodejs_version
   # install modules
-  - npm install -g corejs@latest
   - npm install
 # Post-install test scripts.
 test_script:  
