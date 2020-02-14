@@ -7,7 +7,7 @@
 <script>
 import 'mavon-editor/dist/css/index.css'
 export default {
-  name: 'Letter',
+  name: 'Index',
   data () {
     return {
       tab: 'letter',
